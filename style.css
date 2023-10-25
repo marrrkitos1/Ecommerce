@@ -319,7 +319,7 @@ main {
         height: 8vw;
     }
 
-    .bi.bi-cart {
+    .bi.bi-cart, .bi.bi-cart-fill {
         font-size: 5vw;
     }
 
@@ -380,7 +380,7 @@ main {
         height: 9vw;
     }
 
-    .bi.bi-cart {
+    .bi.bi-cart, .bi.bi-cart-fill {
         font-size: 6vw;
     }
 
@@ -432,7 +432,7 @@ main {
         height: 11vw;
     }
 
-    .bi.bi-cart {
+    .bi.bi-cart, .bi.bi-cart-fill {
         font-size: 7vw;
     }
 
@@ -494,7 +494,7 @@ main {
         height: 14vw;
     }
 
-    .bi.bi-cart {
+    .bi.bi-cart, .bi.bi-cart-fill {
         font-size: 10vw;
     }
 
