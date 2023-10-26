@@ -60,7 +60,21 @@ body {
 }
 
 .btn-div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding-bottom: 1vw;
+}
+
+.bi-arrow-left, .bi-arrow-right {
+    font-size: 2.5vw;
+    color: #D80B1A;
+    font-weight: bolder;
+}
+
+.volver-btn:hover {
+    transform: scale(1.1);
 }
 
 .product-btn {
@@ -85,6 +99,25 @@ body {
     bottom: 0;
 }
 
+@media screen and (max-width:1080px){
+
+    .product-h1 {
+        font-size: 2.6vw;
+    }
+
+    .product-p, .product-price, .product-btn {
+        font-size: 2vw;
+    }
+
+    .bi-arrow-left, .bi-arrow-right {
+        font-size: 3vw;
+    }
+
+    .product-btn {
+        height: 4vw;
+    }
+}
+
 @media screen and (max-width:768px){
     .main {
         width: 100%;
@@ -100,6 +133,14 @@ body {
         margin: 4vw;
     }
 
+    .product-h1 {
+        font-size: 4vw;
+    }
+
+    .bi-arrow-left, .bi-arrow-right {
+        font-size: 3.2vw;
+    }
+
     .product-right {
         margin-top: 5vw;
         width: 100%;
@@ -111,7 +152,7 @@ body {
     }
 
     .product-p, .product-price, .product-btn {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
     }
 
     .product-btn {
@@ -126,8 +167,16 @@ body {
         max-height: 40vw;
     }
 
+    .product-h1 {
+        font-size: 3.8vw;
+    }
+
     .product-p, .product-price, .product-btn {
-        font-size: 3vw;
+        font-size: 3.2vw;
+    }
+
+    .bi-arrow-left, .bi-arrow-right {
+        font-size: 3.8vw;
     }
 
     .product-btn {
@@ -142,10 +191,20 @@ body {
     }
 
     .product-h1 {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+
+    .product-p, .product-price, .product-btn {
+        font-size: 3.5vw;
+    }
+
+    .bi-arrow-left, .bi-arrow-right {
+        font-size: 4.4vw;
     }
 
     .product-btn {
         height: 5vw;
+        padding: 2vw;
+        border-radius: 2vw;
     }
 }

@@ -20,7 +20,7 @@ fetch(`${URL}/${productId}`)
                     <h1 class="product-h1">${product.title}</h1>
                     <p class="product-p">Descripción: ${product.description}</p>
                     <p class="product-price">Precio: $${product.price}</p>
-                    <div class="btn-div"><button class="product-btn">Agregar al carrito</button></div>
+                    <div class="btn-div"><a class="volver-btn" href="index.html"><i class="bi bi-arrow-left"></i></a><button class="product-btn">Agregar al carrito</button><a class="volver-btn" href="carrito.html"><i class="bi bi-arrow-right"></i></a></div>
                 </div>
             `;
             const btnAgregarAlCarrito = document.querySelector('.product-btn');

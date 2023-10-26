@@ -16,7 +16,7 @@
         <nav class="nav-bar">
             <ul class="nav-bar-list">
                 <li class="nav-bar-items">
-                    <a href="index.html"><img src="logo.png" alt="Ecommerce"  id="nav-bar-img"></a>
+                    <a href="index.html"><img src="logo.png" alt="Ecommerce" id="nav-bar-img"></a>
                 </li>
                 <li class="nav-bar-items">
                     <a href="" class="carrito"><i class="bi bi-cart"></i></a>
@@ -26,7 +26,26 @@
     </header>
     <main class="main">
         <div class="carrito-container"></div>
-        <p class="precio-total"></p>
+        <div class="container-compra">
+            <p class="precio-total"></p>
+            <button class="comprar-btn"></button>
+            <i class="bi bi-arrow-repeat" id="loading-icon" style="display: none;"></i>
+            <h2 class="mensaje-compra" style="display: none;">¡Compra exitosa!</h2>
+            <div id="form-container" style="display: none;">
+                <form id="purchase-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <button type="submit" class="enviar-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <ul class="footer-list">
@@ -43,4 +62,5 @@
     </footer>
     <script defer src="carrito.js"></script>
 </body>
+
 </html>
