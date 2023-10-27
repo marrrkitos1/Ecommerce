@@ -41,9 +41,12 @@ function actualizarCarrito() {
             formContainer.style.display = 'none';
             loadingIcon.style.display = 'inline';
     
-            setTimeout(() => {
+            setTimeout (() => {
+                setTimeout(() => {
                 loadingIcon.style.display = 'none';
                 successMessage.style.display = 'block';
+                }, 50);
+                vaciarCarrito();
             }, 2000);
         });
     });
@@ -60,6 +63,16 @@ function agregarEventListenersEliminar() {
             eliminarProducto(index);
         });
     });
+}
+
+function vaciarCarrito () {
+    carritoContainer.innerHTML = '';
+    carrito.length = 0;
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    actualizarCarrito();
+    while (carritoContainer.firstChild) {
+        carritoContainer.removeChild(carritoContainer.firstChild);
+    }
 }
 
 function eliminarProducto(index) {
